@@ -1,0 +1,222 @@
+<div style="background: radial-gradient(circle, darkblue, black);">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Company Name on the Left -->
+      <a class="navbar-brand" href="#">ChadTrader</a>
+
+      <!-- Toggler Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links (Collapsible) -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-between w-100">
+          <!-- Centered Navigation Items -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Propfirms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Compare Firms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+          </ul>
+
+          <!-- Transparent Button on the Right -->
+          <button class="btn btn-outline-light">
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container mt-5">
+    <div class="text-center text-white" >
+      <strong style="font-size: 3em;">Find the Best Prop Firm Deals</strong><br>
+      <strong style="font-size: 3em;">and Free Accounts Here!</strong>
+      <br><br>
+      Never Get Scammed Again! Know everything about the Firm you are dealing with and get<br>
+      rewarded for every time you purchase a challenge! Save yourself time and money.
+    </div>
+    <div class=" mt-5 mb-5" align="center">
+      <app-search-button></app-search-button>
+    </div>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="container">
+   
+
+    <div class="row mt-5">
+      <!-- Washing Machine Repairs -->
+      <div class="col-md-4 mb-4">
+        <div class="card " style="background: transparent;">
+          <div class="card-img-top text-center" style="  border: 2px solid rgb(42, 63, 255); ">
+            <img src="data:image/jpeg;base64,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" alt="Washing Machine Repairs" style="height: 100px; width: 100px; vertical-align: middle; padding-top: 10px;">
+          </div>
+          <div class="card-body text-center" style="color: white;">
+            <h5 class="card-title">The goat funder trader</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plumbing -->
+      <div class="col-md-4 mb-4">
+        <div class="card "  style="background: transparent;">
+          <div class="card-img-top text-center" style="  border: 2px solid rgb(42, 63, 255); ">
+            <img src="data:image/jpeg;base64,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" alt="Plumbing" style="height: 100px; width: 100px; vertical-align: middle; padding-top: 10px;">
+          </div>
+          <div class="card-body text-center" style="color: white;">
+            <h5 class="card-title">Tradoo Fundding</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical Works -->
+      <div class="col-md-4 mb-4">
+        <div class="card "style="background: transparent;">
+          <div class="card-img-top text-center"style="  border: 2px solid rgb(42, 63, 255); ">
+            <img src="data:image/png;base64,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" alt="Electrical Works" style="height: 100px; width: 100px; vertical-align: middle; padding-top: 10px;">
+          </div>
+          <div class="card-body text-center" style="color: white;">
+            <h5 class="card-title">Funding Pieps</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="border-radius: 20%;">
+      <div class="table-responsive">
+        <table class="table" style="background: linear-gradient(to Right, rgb(0, 22, 218) 5%, rgb(1, 1, 1)); color: white; border-color: rgb(42, 63, 255);">
+          <thead style="background-color: darkblue;">
+            <tr>
+              <th scope="col">Account Size</th>
+              <th scope="col">Prize</th>
+              <th scope="col">Points/ Cashback</th>
+              <th scope="col">Daily Stop Loss</th>
+              <th scope="col">Profit Target</th>
+              <th scope="col">Drawdown Types</th>
+              <th scope="col">Payout Period</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">$5k</th>
+              <td>$3853<br><del style="font-size: small;">$3852</del></td>
+              <td><button class="btn btn-primary" style="background: linear-gradient(to Right, rgb(141, 118, 76), rgb(1, 1, 1))">Save $32</button></td>
+              <td>10%</td>
+              <td>12%</td>
+              <td>Equity</td>
+              <td>5 days</td>
+              <td>More info!<button class="btn btn-primary" style="background: linear-gradient(to bottom, rgb(42, 63, 255), rgb(1, 1, 1)); margin-left: 8px;">Buy Now</button></td>
+            </tr>
+            <tr>
+              <th scope="row">$5k</th>
+              <td>$3853<br><del style="font-size: small;">$3852</del></td>
+              <td><button class="btn btn-primary" style="background: linear-gradient(to Right, rgb(141, 118, 76), rgb(1, 1, 1))">Save $32</button></td>
+              <td>10%</td>
+              <td>12%</td>
+              <td>Equity</td>
+              <td>5 days</td>
+              <td>More info!<button class="btn btn-primary" style="background: linear-gradient(to bottom, rgb(42, 63, 255), rgb(1, 1, 1)); margin-left: 8px;">Buy Now</button></td>
+            </tr>
+            <tr>
+              <th scope="row">$5k</th>
+              <td>$3853<br><del style="font-size: small;">$3852</del></td>
+              <td><button class="btn btn-primary" style="background: linear-gradient(to Right, rgb(141, 118, 76), rgb(1, 1, 1))">Save $32</button></td>
+              <td>10%</td>
+              <td>12%</td>
+              <td>Equity</td>
+              <td>5 days</td>
+              <td>More info!<button class="btn btn-primary" style="background: linear-gradient(to bottom, rgb(42, 63, 255), rgb(1, 1, 1)); margin-left: 8px;">Buy Now</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div align="center" style="margin-top: 20px;">
+      <div style="border-radius: 50%; color: white;width: fit-content;background: linear-gradient(to bottom,rgb(63, 85, 224) 10%,rgb(17, 45, 225)) 90%; padding:20px ;">
+              statistics
+
+      </div>
+      <div style="color: white;">
+        <strong style="font-size: 3em;">Realize How Trustworthy</strong><br>
+        <strong style="font-size: 3em;">The Trusted Prop</strong>
+      </div>
+      <!-- Categories Section -->
+  <div class="container">
+   
+
+    <div class="row mt-5">
+      <!-- Washing Machine Repairs -->
+      <div class="col-md-4 mb-4">
+        <div class="card "style="background: radial-gradient(circle, darkblue, black);">
+         
+          <div class="card-body text-center" style="  border: 2px solid rgb(42, 63, 255); ">
+            <span class="card-title" style="color: white;font-size: xx-large;"><strong>100+</strong></span>
+            <br>
+            <span style="color: white;">Monthly gateway</span>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Plumbing -->
+      <div class="col-md-4 mb-4">
+        <div class="card "style="background: radial-gradient(circle, darkblue, black);">
+         
+          <div class="card-body text-center" style="  border: 2px solid rgb(42, 63, 255); ">
+            <span class="card-title" style="color: white;font-size: xx-large;"><strong>200+</strong></span>
+            <br>
+            <span style="color: white;">Free account distributed</span>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical Works -->
+      <div class="col-md-4 mb-4">
+        <div class="card "style="background: radial-gradient(circle, darkblue, black);">
+         
+          <div class="card-body text-center" style="  border: 2px solid rgb(42, 63, 255); ">
+            <span class="card-title" style="color: white;font-size: xx-large;"><strong>$100K+</strong></span>
+            <br>
+            <span style="color: white;">Saved by over traders monthly</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+  <div  >
+    <div class="container">
+      <app-footer></app-footer>
+    </div>
+    
+  </div>
+</div>
