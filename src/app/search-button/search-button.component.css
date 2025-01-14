@@ -1,14 +1,16 @@
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 .input-wrapper {
-    width: fit-content;
-    height: 45px;
+    width: 100%;
+    max-width:350px;  /* Limit the maximum width */
+    height: 55px;
     border-radius: 20px;
     padding: 5px;
-    box-sizing: content-box;
+    box-sizing: border-box;  /* Changed to border-box for consistent sizing */
     display: flex;
     align-items: center;
     background: transparent;
     border: 2px solid rgb(42, 63, 255);  /* Border for visibility */
+    margin: 0 auto;  /* Center the wrapper */
 }
 
 .icon {
@@ -19,15 +21,13 @@
 }
 
 .input {
-    
     height: 100%;
     border: none;
     outline: none;
-    padding-left: 15px;
     background: transparent;
     color: white;  /* Text color */
     font-size: 1em;
-    /* Border to make the input visible */
+    flex-grow: 1;  /* Let the input take as much space as possible */
 }
 
 .input:-webkit-autofill {
@@ -42,7 +42,7 @@
     border-radius: 15px;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    background:transparent;
+    background: transparent;
     font-weight: 500;
     overflow: hidden;
     display: flex;
@@ -51,10 +51,11 @@
     position: relative;
     transition: all 0.3s;
     color: white;
-    border: 2px solid rgb(42, 63, 255); 
-    margin-left: 20px;
+    border: 2px solid rgb(42, 63, 255);
+    padding: 0 10px;  /* Added padding for button */
 }
 
+/* Arrow position adjustments */
 .arrow {
     position: absolute;
     margin-right: 150px;
@@ -101,4 +102,35 @@
 
 .Subscribe-btn:active {
     transform: scale(0.9);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .input-wrapper {
+        width: 90%;  /* Reduce width on smaller screens */
+    }
+
+    .Subscribe-btn {
+        width: 80px;  /* Make button smaller */
+        font-size: 0.9em;
+    }
+
+    .input {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-wrapper {
+        width: 100%;  /* Full width on very small screens */
+        height: 40px;  /* Adjust height for smaller screens */
+    }
+
+    .Subscribe-btn {
+        width: 70px;  /* Further reduce button size */
+    }
+
+    .input {
+        font-size: 0.8em;  /* Make text slightly smaller */
+    }
 }
